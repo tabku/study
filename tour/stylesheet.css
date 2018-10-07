@@ -1,0 +1,25 @@
+.container{
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.tour-wrapper{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.tour-items{
+  margin-bottom: 60px;
+}
+
+.tour-item{
+  display: inline-block;
+  width: 40%;
+  padding: 10px;
+}
+
+.tour-name{
+  font-size: 18px;
+}
