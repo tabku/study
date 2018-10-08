@@ -56,3 +56,11 @@ input[type="submit"] {
   text-align: right;
   width: 30%;
 }
+
+.total-price{
+  font-size: 25px;
+  font-style: italic;
+  color: #0000FF;
+  font-weight: bold;
+
+}

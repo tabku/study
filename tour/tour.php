@@ -49,6 +49,7 @@
         return floor($this->price * 1.08);
       }
 
+      // セッターで設定した個数と税込価格をかける。
       public function getTotalPrice(){
         return $this->getTaxInPrice() * $this->orderCount;
       }
