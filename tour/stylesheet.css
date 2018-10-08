@@ -23,3 +23,36 @@
 .tour-name{
   font-size: 18px;
 }
+
+input{
+  width: 50px;
+  text-align: center;
+}
+
+input[type="submit"] {
+  width: 100px;
+  text-align: center;
+}
+
+.tour-confirm-wrapper{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f8f8f8;
+  width: 500px;
+}
+
+.tour-confirm-wrapper p {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.tour-amount{
+  text-align:left;
+  width: 40%;
+}
+
+.tour-price{
+  text-align: right;
+  width: 30%;
+}
