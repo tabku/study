@@ -62,5 +62,11 @@ input[type="submit"] {
   font-style: italic;
   color: #0000FF;
   font-weight: bold;
+}
 
+.tour-count{
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #000080;
 }

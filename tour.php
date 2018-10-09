@@ -9,6 +9,8 @@
     private $date;
     private $img;
     private $orderCount = 0;
+  //クラスプロパティの設定
+    private static $tourCount = 0;
 
   //コンストラクタ (名前と値段と日程の値をプロパティにセット)
     public function __construct($name,$price,$date,$img){
@@ -16,6 +18,8 @@
       $this->price = $price;
       $this->date = $date;
       $this->img = $img;
+      //インスタンスが実行されるたびに＋１をしていく。
+      self::$tourCount++;
     }
 
     //メソッドの設定（クラス内の関数）
@@ -49,9 +53,13 @@
         return floor($this->price * 1.08);
       }
 
-      // セッターで設定した個数と税込価格をかける。
+      // セッターで設定した個数と税込価格をかける
       public function getTotalPrice(){
         return $this->getTaxInPrice() * $this->orderCount;
+      }
+      //クラスプロパティを呼び出すゲッターの設定
+      public static function getTourCount(){
+        return self::$tourCount;
       }
 
 }

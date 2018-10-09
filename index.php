@@ -11,6 +11,9 @@
   <div class="container tour-wrapper">
     <form action="tour-confirm.php" method="post">
       <div class="tour-items">
+        <p class="tour-count">
+          ツアー:<?php echo Tour::getTourCount() ?>カ国
+        </p>
             <!-- ツアーの名前と日程ををforeachで出力する -->
           <?php foreach ($tours as $tour): ?>
             <div class="tour-item">
